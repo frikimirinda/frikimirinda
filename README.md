@@ -1,5 +1,6 @@
-![mirinda](mirinda_es.svg)
-
+<p align="center">
+  <a href="https://www.mirinda.es" title="go to mirinda.es"><img src="mirinda_es.svg" width="227"></a>
+</p>
 
 # mirinda.es — Open Source Modules
 
