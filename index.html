@@ -261,6 +261,13 @@ nav .container {
   cursor: pointer;
   border: none;
   transition: all .25s;
+  margin:10px;
+}
+.btn-sm{
+  gap: 5px;
+  padding: 3px 15px;
+  border-radius: 20px;
+ 
 }
 .btn-primary {
   background: var(--primary);
@@ -349,7 +356,7 @@ nav .container {
 .code-dots span:nth-child(3) { background: #28c840; }
 .code-keyword { color: #a78bfa; }
 .code-string { color: #6ee7b7; }
-.code-comment { color: #555580; }
+.code-comment { color: #aaaab3; }
 .code-func { color: #60a5fa; }
 
 /* === SECTION SHARED === */
@@ -825,15 +832,13 @@ footer {
       <div class="code-card">
         <div class="code-dots"><span></span><span></span><span></span></div>
         <div><span class="code-comment">// Install in seconds</span></div>
-        <div><span class="code-keyword">import</span> { Picture } <span class="code-keyword">from</span> <span class="code-string">'@openlibs/grid'</span>;</div>
+        <div><span class="code-keyword">import</span> { Picture } <span class="code-keyword">from</span> <span class="code-string">'../src/picture.js'</span>;</div>
         <br>
-        <div><span class="code-keyword">const</span> grid = <span class="code-keyword">new</span> <span class="code-func">DataGrid</span>({</div>
-        <div>&nbsp;&nbsp;data: <span class="code-string">'api/data'</span>,</div>
-        <div>&nbsp;&nbsp;paginate: <span class="code-keyword">true</span>,</div>
-        <div>&nbsp;&nbsp;search: <span class="code-keyword">true</span></div>
-        <div>});</div>
+        <div><span class="code-keyword">const</span> data = <span class="code-string">123456</span>;</div>
+        <div><span class="code-keyword">const</span> pic  = <span class="code-string">"N$.-&lt;8"</span>;</div>
+        <div><span class="code-keyword">let</span> formatted   = Picture.<span class="code-func">format</span>( data, pic );        <span class="code-comment">// 123.456$</span></div>
+        <div><span class="code-keyword">let</span> deformatted = Picture.<span class="code-func">deformat</span>( formatted, pic);  <span class="code-comment">// 123456</span></div>
         <br>
-        <div>grid.<span class="code-func">render</span>(<span class="code-string">'#app'</span>);</div>
       </div>
     </div>
   </div>
@@ -873,6 +878,19 @@ footer {
         <p>
           A small-but-powerful JavaScript class for formatting, deformatting, and validating data using <b>picture strings</b> — compact format descriptors for strings, numbers, dates, times, and patterns.
         </p>
+        <p>
+          <a href="https://frikimirinda.github.io/picture/test/test_picture_01.html" target="picture" class="btn btn-primary btn-sm">
+              try live test 01
+          </a>
+          <a href="https://frikimirinda.github.io/picture/test/test_picture_02.html" target="picture" class="btn btn-primary btn-sm">
+              try live test 02
+          </a>
+          <a href="https://frikimirinda.github.io/picture/docs/picture.html" target="picture" class="btn btn-primary btn-sm">
+              documentation
+          </a>
+        </p>
+
+
         <div class="lib-meta">
                 <a class="github-button" 
                     href="https://github.com/frikimirinda/picture" 
@@ -884,10 +902,8 @@ footer {
                   data-icon="octicon-repo-forked" 
                   data-show-count="true" 
                   aria-label="Star on GitHub">fork</a>
-<!--
-          <span><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 847</span>
-          <span><svg viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-.878a2.25 2.25 0 111.5 0v.878a2.25 2.25 0 01-2.25 2.25h-1.5v2.128a2.251 2.251 0 11-1.5 0V8.5h-1.5A2.25 2.25 0 013.5 6.25v-.878a2.25 2.25 0 111.5 0z"/></svg> 124 forks</span>
-        -->          
+
+
         </div>
         <a href="https://github.com/frikimirinda/picture" target="picture" class="lib-link">View repository <svg viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06l2.97-2.97H3.75a.75.75 0 010-1.5h7.44L8.22 4.03a.75.75 0 010-1.06z"/></svg></a>
       </div>
