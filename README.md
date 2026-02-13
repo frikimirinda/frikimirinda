@@ -19,7 +19,6 @@ Responsive web page with the following sections:
 - **CTA**: Call-to-action section encouraging contributions on GitHub.
 
 
-
 ### [mirinda.es](https://www.mirinda.es)
 
 ### [github](https://github.com/frikimirinda)
