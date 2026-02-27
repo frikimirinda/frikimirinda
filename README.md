@@ -15,7 +15,7 @@ Responsive web page with the following sections:
   - **Picture.js** (JavaScript) — Class for formatting, deformatting, and validating data using picture strings.
   - **DBconnect** (PHP) — Class for connecting to multiple databases (coming soon).
   - **Hugelist.js** (JavaScript) — A standalone JavaScript class for rendering large tabular datasets (300,000+ rows) in the browser. It uses virtual scrolling so only the visible rows are ever rendered, making it fast even with massive datasets.
-  - **Router** (PHP) — Simple but powerful PHP router (coming soon).
+  - **Router** (PHP) — A lightweight PHP router that maps HTTP requests to PHP files using INI configuration files.
 - **CTA**: Call-to-action section encouraging contributions on GitHub.
 
 ### [mirinda.es](https://www.mirinda.es)
